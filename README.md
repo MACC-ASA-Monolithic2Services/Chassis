@@ -1,4 +1,4 @@
-# my-schemas
+# Schemas  
 
 A simple Python package that contains Pydantic schemas for other projects.
 
@@ -7,4 +7,4 @@ A simple Python package that contains Pydantic schemas for other projects.
 You can install directly from GitHub:
 
 ```bash
-pip install https://github.com/MACC-ASA-Monolithic2Services/Chassis
+pip install git+https://github.com/MACC-ASA-Monolithic2Services/Chassis.git
