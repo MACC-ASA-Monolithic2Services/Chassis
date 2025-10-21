@@ -7,4 +7,4 @@ A simple Python package that contains Pydantic schemas for other projects.
 You can install directly from GitHub:
 
 ```bash
-pip install git+https://github.com/yourusername/my-schemas.git
+pip install https://github.com/MACC-ASA-Monolithic2Services/Chassis
