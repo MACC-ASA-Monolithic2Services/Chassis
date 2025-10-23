@@ -4,13 +4,19 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "my-Schemas_MicroService"
-version = "0.1.0"
-description = "A collection of Pydantic schemas for my projects"
+version = "0.2.0"
+description = "A collection of Pydantic schemas and dependencies for my projects"
 authors = [{ name = "Equipo 4", email = "mauriciosebastian.lu@mondragon.edu" }]
 license = { text = "MIT" }
 readme = "README.md"
 requires-python = ">=3.8"
-dependencies = ["pydantic>=2.0"]
+dependencies = [
+    "pydantic>=2.0",
+    "pydantic-settings>=2.0",
+    "fastapi>=0.100.0",
+    "PyJWT>=2.8.0",
+    "sqlalchemy>=2.0",
+]
 
 [project.urls]
 Homepage = "https://github.com/MACC-ASA-Monolithic2Services/Chassis"
