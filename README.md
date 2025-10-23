@@ -1,6 +1,6 @@
 # Schemas  
 
-A simple Python package that contains Pydantic schemas for other projects.
+A simple Python package that contains Pydantic schemas and token dependencies for other projects.
 
 ## Installation
 
