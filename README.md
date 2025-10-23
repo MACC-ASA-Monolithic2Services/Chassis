@@ -1,6 +1,6 @@
-# Schemas  
+# Chassis  
 
-A simple Python package that contains Pydantic schemas and token dependencies for other projects.
+A simple Python package that contains JWT-related dependencies for other projects.
 
 ## Installation
 
