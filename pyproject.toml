@@ -16,6 +16,7 @@ dependencies = [
     "fastapi>=0.100.0",
     "PyJWT>=2.8.0",
     "sqlalchemy>=2.0",
+    "aio-pika>=9.4.0",
 ]
 
 [project.urls]

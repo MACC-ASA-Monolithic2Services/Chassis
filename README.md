@@ -1,6 +1,6 @@
 # Chassis  
 
-A simple Python package that contains JWT-related dependencies for other projects.
+A simple Python package that contains JWT-related and rabbitmq logger related dependencies for other projects.
 
 ## Installation
 
