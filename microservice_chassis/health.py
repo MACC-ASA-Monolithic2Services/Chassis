@@ -8,7 +8,7 @@ from fastapi import APIRouter, Depends, Response, status
 from sqlalchemy.ext.asyncio import AsyncSession
 from sqlalchemy import text
 
-from .logger_mq import RabbitMQLogPublisher  # ya existe en el Chassis
+from .rabbitmq_logger import RabbitMQLogPublisher  # ya existe en el Chassis
 
 logger = logging.getLogger(__name__)
 
