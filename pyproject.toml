@@ -17,6 +17,8 @@ dependencies = [
     "PyJWT>=2.8.0",
     "sqlalchemy>=2.0",
     "aio-pika>=9.4.0",
+    "python-consul2>=0.1",
+    "dnspython>=2.7",
 ]
 
 [project.urls]
