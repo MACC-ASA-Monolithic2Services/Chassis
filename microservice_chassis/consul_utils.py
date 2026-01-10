@@ -20,6 +20,18 @@ def get_ip():
         s.close()
 
 
+def get_advertise_ip():
+    """
+    IP address to register in Consul.
+    - If ADVERTISE_IP is set, use it (best practice for service discovery).
+    - Otherwise, fall back to container IP.
+    """
+    ip = environ.get("ADVERTISE_IP")
+    if ip and ip.strip():
+        return ip.strip()
+    return get_ip()
+
+
 CONSUL_HOST = environ.get("CONSUL_HOST", "172.28.0.10")
 CONSUL_PORT = environ.get("CONSUL_PORT", 8500)
 CONSUL_DNS_PORT = environ.get("CONSUL_DNS_PORT", 8600)
@@ -28,7 +40,7 @@ SERVICE_NAME = environ.get("SERVICE_NAME", "service")
 # SERVICE_ID = environ.get("SERVICE_ID", "s1r0")
 # GENERATE UUID FOR SERVICE_ID
 SERVICE_ID = SERVICE_NAME + "_" + str(uuid.uuid4())
-IP = get_ip()
+IP = get_advertise_ip()
 
 logger = logging.getLogger(__name__)
 
